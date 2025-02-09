@@ -31,8 +31,11 @@ function App() {
   };
 
   return (
-    <Box sx={{ 
-        height: '100%', 
+    <Box sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'space-evenly',
+        minHeight: '100vh', 
         width: '100%', 
         pt: '2rem',
         overflow: 'auto',
@@ -47,7 +50,6 @@ function App() {
           Not familiar with Cebu Jeepney codes? Just choose one below!
         </Typography>
       </Box>
-      <Search />
       <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', mt: '2rem' }}>
         <FormControl sx={{ m: 1, minWidth: 120 }}>
           <InputLabel id="code-label">Code</InputLabel>
@@ -78,6 +80,7 @@ function App() {
         </Typography>
       </Box>
       <Map code={code} />
+      <Search />
     </Box>
   )
 }

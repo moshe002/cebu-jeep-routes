@@ -27,7 +27,6 @@ export default function Map({ code }) {
                             Jeepney Route Data from https://cebujeepneys.weebly.com/jeepney-routes.html
                         </Typography>
                     </Box>
-                    
                 ) : (
                     <>
                         <Typography
